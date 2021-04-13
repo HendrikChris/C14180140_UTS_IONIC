@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>detail</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="semua">
+    <div *ngFor="let data of isiData | async; index as position">
+      <p *ngIf="data.judul == paramJudul">Judul : {{data.judul}}</p>
+      <p *ngIf="data.judul == paramJudul">Isi : {{data.isi}}</p>
+      <p *ngIf="data.judul == paramJudul">Tanggal : {{data.date}}</p>
+      <p *ngIf="data.judul == paramJudul">Nilai : {{data.nilai}}</p>
+      <ion-img *ngIf="data.judul == paramJudul" [src]="data.fotoPaths"></ion-img>
+    </div>
+    
+  </div>
+</ion-content>

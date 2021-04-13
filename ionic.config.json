@@ -1,0 +1,7 @@
+{
+  "name": "c14180140_uts_ionic",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
